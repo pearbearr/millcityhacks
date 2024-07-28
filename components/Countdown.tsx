@@ -5,7 +5,10 @@ export default function Countdown(props: { targetDate: string }) {
   const countDownDate = new Date(props.targetDate).getTime();
   let timeDelta = countDownDate - new Date().getTime();
   const [countDown, setCountDown] = useState(timeDelta);
-
+  const [isClient, setIsClient] = useState(false)
+  useEffect(() => {
+    setIsClient(true)
+  }, [])
   useEffect(() => {
     const interval = setInterval(() => {
       let timeDelta = countDownDate - new Date().getTime();
@@ -18,7 +21,7 @@ export default function Countdown(props: { targetDate: string }) {
   return (
     <div className="flex items-center justify-center m-[10%] p-5 bg-black text-white text-[4em] font-bold rounded-xl">
       <div className="">
-        {getReturnValues(countDown)
+        {isClient && getReturnValues(countDown)
           .map((x) => String(x).padStart(2, "0"))
           .join(":")}
       </div>
