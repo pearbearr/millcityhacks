@@ -4,6 +4,7 @@ import { Footer } from "@/components/Footer";
 import { Schedule } from "@/components/Schedule";
 import Image from "next/image";
 import { Separator } from "@/components/ui/separator";
+import { Tracks } from "@/components/Tracks";
 
 export default function Home() {
   return (
@@ -20,8 +21,9 @@ export default function Home() {
       </header>
       <section id="about">
         <HeroTaglineWriter />
-        
       </section>
+      <Separator className="my-10 mx-10 w-[91%] h-1 bg-lime-300"></Separator>
+      <Tracks/>
       <Separator className="my-10 mx-10 w-[91%] h-1 bg-lime-300"></Separator>
       <Schedule/>
 
