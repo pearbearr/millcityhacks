@@ -23,11 +23,11 @@ export function HeroTaglineWriter() {
     },
     {
       text: "high",
-      className: "text-blue-500 dark:text-blue-500",
+      className: "text-green-500 dark:text-blue-500",
     },
     {
       text: "schoolers.",
-      className: "text-blue-500 dark:text-blue-500",
+      className: "text-green-500 dark:text-blue-500",
     },
   ];
   return (

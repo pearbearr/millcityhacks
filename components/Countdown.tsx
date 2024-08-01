@@ -21,7 +21,7 @@ export default function Countdown(props: { targetDate: string }) {
   }, [countDown]);
 
   return (
-    <div className="flex items-center justify-center m-[10%] p-5 bg-black text-white text-[2em] font-bold rounded-xl">
+    <div className="flex items-center justify-center mx-[10%] p-5 bg-black text-white text-[2em] font-bold rounded-xl">
       <div className="">
         {isClient ? (
           getReturnValues(countDown)
