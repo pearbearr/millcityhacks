@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Roboto, Source_Code_Pro, Poiret_One } from "next/font/google";
 import "./globals.css";
 import { NavigationBar } from "@/components/NavigationBar";
+import { Analytics } from "@vercel/analytics/react"
 
 const inter = Inter({ subsets: ["latin"] });
 const roboto = Roboto({ weight: "400", subsets: ["latin"] });
@@ -22,9 +23,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      
       <body className={codepro.className + " bg-lime-200 scroll-smooth"}>
         <NavigationBar className={"bg-green-500 font-extrabold " + codepro.className} />
-        {children}</body>
+        {children}<Analytics/></body>
     </html>
   );
 }
