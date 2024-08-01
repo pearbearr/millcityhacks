@@ -21,6 +21,14 @@ export function NavigationBar(props: any) {
         )}
       >
         Tracks
+        </a>
+      <a
+        href="#schedule"
+        className={cn(
+          "text-black font-bold",
+        )}
+      >
+        Schedule
       </a>
       <a
         href="#contact"
