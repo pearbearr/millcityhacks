@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main>
       <header>
-        <nav className="flex space-x-[10%] justify-center p-4 bg-gray-100 border-4">
+        <nav className="flex space-x-[10%] justify-start p-4 bg-gray-100 border-4">
           <a href="#section">Home</a>
           <a href="">About</a>
           <a href="">Tracks</a>
@@ -13,8 +13,8 @@ export default function Home() {
         </nav>
       </header>
       <section id="section">
-        <Countdown targetDate="11/09/2024 08:00" />
         <HeroTaglineWriter />
+        <Countdown targetDate="11/09/2024 08:00" />
       </section>
 
       <footer></footer>

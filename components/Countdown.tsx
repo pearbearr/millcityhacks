@@ -1,14 +1,16 @@
 "use client";
 import { useEffect, useState } from "react";
+import { Skeleton } from "@/components/ui/skeleton";
+import { Suspense } from "react";
 
 export default function Countdown(props: { targetDate: string }) {
   const countDownDate = new Date(props.targetDate).getTime();
   let timeDelta = countDownDate - new Date().getTime();
   const [countDown, setCountDown] = useState(timeDelta);
-  const [isClient, setIsClient] = useState(false)
+  const [isClient, setIsClient] = useState(false);
   useEffect(() => {
-    setIsClient(true)
-  }, [])
+    setIsClient(true);
+  }, []);
   useEffect(() => {
     const interval = setInterval(() => {
       let timeDelta = countDownDate - new Date().getTime();
@@ -19,11 +21,20 @@ export default function Countdown(props: { targetDate: string }) {
   }, [countDown]);
 
   return (
-    <div className="flex items-center justify-center m-[10%] p-5 bg-black text-white text-[4em] font-bold rounded-xl">
+    <div className="flex items-center justify-center m-[10%] p-5 bg-black text-white text-[2em] font-bold rounded-xl">
       <div className="">
-        {isClient && getReturnValues(countDown)
-          .map((x) => String(x).padStart(2, "0"))
-          .join(":")}
+        {isClient ? (
+          getReturnValues(countDown)
+            .map((x) => String(x).padStart(2, "0"))
+            .join(":")
+        ) : (
+          <div className="space-x-5 flex items-center justify-center">
+            <Skeleton className="h-12 w-[90px]" />
+            <Skeleton className="h-12 w-[90px]" />
+            <Skeleton className="h-12 w-[90px]" />
+            <Skeleton className="h-12 w-[90px]" />
+          </div>
+        )}
       </div>
     </div>
   );
