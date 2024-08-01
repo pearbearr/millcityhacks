@@ -12,7 +12,7 @@ const poi = Poiret_One({ weight: "400", subsets: ["latin"] });
 
 
 export const metadata: Metadata = {
-  title: "Mill City Hacks | Lowell's Premier High School Hackathon",
+  title: "Mill City Hacks | A TPI Hackathon",
   description: "Join us for Mill City Hacks, a thrilling hackathon designed specifically for high school students across the US.  Get ready to code, collaborate, and create innovative projects!",
   keywords: "hackathon, Lowell, high school, coding, technology, innovation, competition, prizes, Mill City Hacks, The Programming Initiative",
   openGraph: {
