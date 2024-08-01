@@ -1,5 +1,6 @@
 "use client";
 import { TypewriterEffect } from "./ui/typewriter-effect";
+import Link from "next/link";
 
 export function HeroTaglineWriter() {
   const words = [
@@ -31,18 +32,15 @@ export function HeroTaglineWriter() {
     },
   ];
   return (
-    <div className="flex flex-col items-center justify-center h-[20rem] ">
-      <p className="text-neutral-600 dark:text-neutral-200 text-base  mb-10">
-        The Programming Initiative presents...
-      </p>
+    <div className="shadow-lg rounded-xl mx-10 flex flex-col items-center justify-center h-[20rem] ">
       <TypewriterEffect words={words} />
       <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4 mt-10">
-        <button className="w-40 h-10 rounded-xl bg-black border dark:border-white border-transparent text-white text-sm">
+        <Link href="/" className="text-center flex items-center justify-center w-40 h-10 rounded-xl bg-emerald-900 border dark:border-white border-transparent text-white text-sm">
           Get Notified
-        </button>
-        <button className="w-40 h-10 rounded-xl bg-white text-black border border-black  text-sm">
+        </Link>
+        <Link href="/" className="text-center flex items-center justify-center w-40 h-10 rounded-xl bg-emerald-100 text-black border border-black  text-sm">
           Register
-        </button>
+        </Link>
       </div>
     </div>
   );

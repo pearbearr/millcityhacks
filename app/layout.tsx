@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={codepro.className + " bg-green-200"}>
+      <body className={codepro.className + " bg-lime-200"}>
         <NavigationBar className={"bg-green-500 " + codepro.className} />
         {children}</body>
     </html>
