@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
-import { Inter, Roboto, Source_Code_Pro } from "next/font/google";
+import { Inter, Roboto, Source_Code_Pro, Poiret_One } from "next/font/google";
 import "./globals.css";
-import { NavigationBar } from "@/components/ui/NavigationBar";
+import { NavigationBar } from "@/components/NavigationBar";
 
 const inter = Inter({ subsets: ["latin"] });
 const roboto = Roboto({ weight: "400", subsets: ["latin"] });
 const codepro = Source_Code_Pro({ weight: "400", subsets: ["latin"] });
+const poi = Poiret_One({ weight: "400", subsets: ["latin"] });
+
 
 
 export const metadata: Metadata = {
@@ -20,8 +22,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={codepro.className + " bg-lime-200"}>
-        <NavigationBar className={"bg-green-500 " + codepro.className} />
+      <body className={codepro.className + " bg-lime-200 scroll-smooth"}>
+        <NavigationBar className={"bg-green-500 font-extrabold " + codepro.className} />
         {children}</body>
     </html>
   );

@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 
 export function NavigationBar(props: any) {
     return (
-    <nav className={"flex space-x-[4rem] text-2xl justify-start p-4 uppercase bg-green-200 border-4 border-green-800 " + props.className}>
+    <nav className={"flex space-x-[4rem] text-2xl justify-center p-4 uppercase bg-green-200 border-4 border-green-800 " + props.className}>
       
       <a
         href="#about"
