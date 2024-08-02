@@ -1,5 +1,6 @@
 "use client";
 import { TypewriterEffect } from "./ui/typewriter-effect";
+import { LinkPreview } from "@/components/ui/link-preview";
 import Link from "next/link";
 
 export function HeroTaglineWriter() {
@@ -35,12 +36,12 @@ export function HeroTaglineWriter() {
     <div className="shadow-2xl border-2 border-green-500 rounded-xl mx-10 flex flex-col items-center justify-center h-[20rem] ">
       <TypewriterEffect words={words} />
       <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4 mt-10">
-        <Link href="https://docs.google.com/forms/d/e/1FAIpQLSfof7bVLGS0_VfHOpx8iuDRd0_qM29cdmiyYW8LAH8HQdeFvw/viewform" className="text-center flex items-center justify-center w-40 h-10 rounded-xl bg-emerald-900 border dark:border-white border-transparent text-white text-sm">
+        <LinkPreview className="hover:bg-emerald-800 text-center flex items-center justify-center w-40 h-10 rounded-xl bg-emerald-900 border dark:border-white border-transparent text-white text-sm" url="https://docs.google.com/forms/d/e/1FAIpQLSfof7bVLGS0_VfHOpx8iuDRd0_qM29cdmiyYW8LAH8HQdeFvw/viewform">
           Get Notified
-        </Link>
-        <Link href="https://docs.google.com/forms/d/e/1FAIpQLSfof7bVLGS0_VfHOpx8iuDRd0_qM29cdmiyYW8LAH8HQdeFvw/viewform" className="text-center flex items-center justify-center w-40 h-10 rounded-xl bg-emerald-100 text-black border border-black  text-sm">
+        </LinkPreview>
+        <LinkPreview url="https://docs.google.com/forms/d/e/1FAIpQLSfof7bVLGS0_VfHOpx8iuDRd0_qM29cdmiyYW8LAH8HQdeFvw/viewform" className="text-center flex items-center justify-center w-40 h-10 rounded-xl bg-emerald-100 text-black border border-black  text-sm">
           Register
-        </Link>
+        </LinkPreview>
       </div>
     </div>
   );
