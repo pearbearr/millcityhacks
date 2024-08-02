@@ -109,7 +109,7 @@ export function HeroTaglineWriter() {
               Get Notified
             </button>
           </DialogTrigger>
-          {<DialogContent className="sm:max-w-[425px] bg-[#d5ffdc]">
+          <DialogContent className="sm:max-w-[425px] bg-[#d5ffdc]">
             <DialogHeader>
               <DialogTitle>Join our email listserv!</DialogTitle>
               <DialogDescription className="text-gray-900">
@@ -150,7 +150,7 @@ export function HeroTaglineWriter() {
               </DialogFooter>
             </form>
               
-          </DialogContent>}
+          </DialogContent>
         </Dialog>
         <Dialog open={congrats} onOpenChange={setCongrats}>
           <DialogContent className="sm:max-w-[425px] bg-[#d5ffdc]">
