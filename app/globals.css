@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 1.2s
+}
+
 section {
   scale: 100%;
   transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 1.2s
