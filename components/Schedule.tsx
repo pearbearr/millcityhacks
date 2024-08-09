@@ -46,8 +46,8 @@ export function Schedule() {
   ]);
 
   return (
-    <section id="schedule" className="border-2 border-green-500 text-slate-800 mx-10 p-5 shadow-xl rounded-xl">
-      <h2 className="text-3xl font-bold mb-4 text-center bg-lime-300 rounded-3xl">Schedule</h2>
+    <section id="schedule" className="border-2 border-blue-800 text-slate-800 mx-10 p-5 shadow-xl rounded-xl">
+      <h2 className="text-3xl font-bold mb-4 text-center bg-lmain rounded-3xl">Schedule</h2>
       <div className="grid grid-cols-2 gap-4">
         <div className="col-span-1">
           <h3 className="text-xl font-bold mb-2 ">EST Timezone</h3>

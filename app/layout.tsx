@@ -42,8 +42,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       
-      <body className={codepro.className + " bg-lime-200 scroll-smooth"}>
-        <NavigationBar className={"bg-green-500 font-extrabold " + codepro.className} />
+      <body className={codepro.className + " bg-lmain scroll-smooth"}>
+        <NavigationBar className={"bg-dnav font-extrabold " + codepro.className} />
         {children}<Analytics/></body>
     </html>
   );

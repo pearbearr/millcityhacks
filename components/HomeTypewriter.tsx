@@ -100,12 +100,12 @@ export function HeroTaglineWriter() {
     },
   ];
   return (
-    <div className="shadow-2xl border-2 border-green-500 rounded-xl mx-10 flex flex-col items-center justify-center h-[20rem] ">
+    <div className="shadow-2xl border-2 border-blue-800 rounded-xl mx-10 flex flex-col items-center justify-center h-[20rem] ">
       <TypewriterEffect words={words}/>
       <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4 mt-10">
         <Dialog open={isOpen} onOpenChange={setIsOpen}>
           <DialogTrigger asChild>
-            <button onClick={handleOpen} className="hover:bg-emerald-800 text-center flex items-center justify-center w-40 h-10 rounded-xl bg-emerald-900 border dark:border-white border-transparent text-white text-sm">
+            <button onClick={handleOpen} className="hover:bg-dheaders text-center flex items-center justify-center w-40 h-10 rounded-xl bg-lfooterandtimer border dark:border-white border-transparent text-white text-sm">
               Get Notified
             </button>
           </DialogTrigger>

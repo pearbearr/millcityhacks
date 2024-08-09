@@ -21,18 +21,23 @@ export default function Countdown(props: { targetDate: string }) {
   }, [countDown]);
 
   return (
-    <div className="transition-all duration-500 flex items-center justify-center  p-5 bg-green-900 border-2 border-black   text-white text-[2em] font-bold">
+    <div className="transition-all duration-500 flex items-center justify-center  p-5 bg-lfooterandtimer border-2 border-black   text-white text-[2em] font-bold">
       <div className="flex flex-row space-x-10">
         {isClient ? (
           getReturnValues(countDown)
             .map((x) => String(x).padStart(2, "0"))
             .map((x, i) => (
-              <span key={i} className="  rounded-xl lg:text-7xl md:text-5xl sm:text-4xl flex flex-wrap items-center justify-center lg:flex-colmd:flex-col sm:flex-row">
+              <span
+                key={i}
+                className="  rounded-xl lg:text-7xl md:text-5xl sm:text-4xl flex flex-wrap items-center justify-center lg:flex-colmd:flex-col sm:flex-row"
+              >
                 <p className="text-center">{x}</p>
-                <p className="text-xs sm:text-sm md:text-md lg:text-lg uppercase text-center">{i === 0 && "days"}
-                {i === 1 && "hours"}
-                {i === 2 && "minutes"}
-                {i === 3 && "seconds"}</p>
+                <p className="text-xs sm:text-sm md:text-md lg:text-lg uppercase text-center">
+                  {i === 0 && "days"}
+                  {i === 1 && "hours"}
+                  {i === 2 && "minutes"}
+                  {i === 3 && "seconds"}
+                </p>
               </span>
             ))
         ) : (
