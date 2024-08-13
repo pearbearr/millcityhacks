@@ -1,7 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
 import { Skeleton } from "@/components/ui/skeleton";
-import { Suspense } from "react";
 
 export default function Countdown(props: { targetDate: string }) {
   const countDownDate = new Date(props.targetDate).getTime();
@@ -21,7 +20,7 @@ export default function Countdown(props: { targetDate: string }) {
   }, [countDown]);
 
   return (
-    <div className="transition-all duration-500 flex items-center justify-center  p-5 bg-lfooterandtimer border-2 border-black   text-white text-[2em] font-bold">
+    <div className="transition-all duration-500 flex items-center justify-center  p-5 bg-lfooterandtimer border-2 border-black border-b-0 text-white text-[2em] font-bold">
       <div className="flex flex-row space-x-10">
         {isClient ? (
           getReturnValues(countDown)
