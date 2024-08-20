@@ -6,7 +6,7 @@ import Image from "next/image";
 import { Separator } from "@/components/ui/separator";
 import { Tracks } from "@/components/Tracks";
 import SponsorsCarousel from "@/components/SponsorsCarousel";
-import FAQ from "@/components/ui/FAQ";
+import FAQ from "@/components/FAQ";
 import Team from "@/components/Team";
 
 export default function Home() {

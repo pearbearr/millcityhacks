@@ -49,13 +49,13 @@ const FAQ = () => {
       <div className="m-5 grid grid-cols-1 md:grid-cols-2 gap-4">
         {faqs.map((faq, index) => (
           <div key={index} className="bg-white shadow-md rounded-lg p-4 border border-gray-200">
-            <h3 
+            <button 
               onClick={() => toggleAnswer(index)} 
-              className="text-lg font-semibold cursor-pointer hover:text-blue-600 flex justify-between"
+              className="text-lg w-full font-semibold cursor-pointer hover:text-blue-600 flex justify-between"
             >
               {faq.question} <span>{openIndex === index ? '-' : '+'}</span>
               
-            </h3>
+            </button>
             {openIndex === index && <p className="text-gray-700 mt-2">{faq.answer}</p>}
           </div>
         ))}
