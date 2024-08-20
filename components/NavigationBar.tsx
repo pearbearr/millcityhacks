@@ -2,15 +2,18 @@
 import { cn } from "@/lib/utils";
 import { useState } from "react";
 import Image from "next/image";
-// import { usePathname } from "next/navigation";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export function NavigationBar(props: any) {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
+
   return (
     <>
-      <div className="md:hidden p-2 uppercase bg-dnav border-4 border-blue-800">
+      <div className={"md:hidden p-2 uppercase bg-dnav border-2 border-b-0 border-blue-800  flex " + (open ? "items-center justify-center" : "")}>
         <button
-          className="stroke-green-500 p-2 rounded-2xl border-2 hover:bg-emerald-400"
+          className={"stroke-blue-500 p-1 rounded-2xl border-2 hover:bg-blue-400" + (open ? " bg-blue-400" : "")}
           onClick={() => {
             setOpen(!open);
           }}
@@ -21,26 +24,52 @@ export function NavigationBar(props: any) {
             width={30}
             height={30}
           ></Image>
+          {open && <nav
+        className={
+          "w-[90vw] flex md:text-xl lg:text-2xl flex-col justify-center items-center p-2 space-y-2  uppercase   " +
+          props.className + (open ? " bg-blue-400" : "")
+        }
+      >
+        <Link href={pathname === "/faq" ? "/" : "#about"} className={cn("text-black font-bold hover:underline ")}>
+          About
+        </Link>
+        <Link href={pathname === "/faq" ? "/" : "#tracks"} className={cn("text-black font-bold hover:underline ")}>
+          Tracks
+        </Link>
+        <Link href={pathname === "/faq" ? "/" : "#schedule"} className={cn("text-black font-bold hover:underline ")}>
+          Schedule
+        </Link>
+        <Link href={pathname === "/faq" ? "/" : "#contact"} className={cn("text-black font-bold hover:underline ")}>
+          Contact
+        </Link>
+        <Link href={pathname === "/faq" ? "/" : "/faq"} className={cn("text-black font-bold hover:underline ")}>
+          FAQ
+        </Link>
+      </nav> }
         </button>
       </div>
+      
       <nav
         className={
-          "hidden md:block flex space-x-[4rem] text-2xl justify-center p-4 uppercase border-4 border-blue-800 " +
+          "hidden md:block flex space-x-[2rem] md:text-xl lg:text-2xl justify-center items-center p-4 uppercase border-2 border-b-0 border-blue-800 " +
           props.className
         }
       >
-        <a href="#about" className={cn("text-black font-bold")}>
+        <Link href={pathname === "/faq" ? "/" : "#about"} className={cn("hover:underline text-black font-bold")}>
           About
-        </a>
-        <a href="#tracks" className={cn("text-black font-bold")}>
+        </Link>
+        <Link href={pathname === "/faq" ? "/" : "#tracks"} className={cn("hover:underline text-black font-bold")}>
           Tracks
-        </a>
-        <a href="#schedule" className={cn("text-black font-bold")}>
+        </Link>
+        <Link href={pathname === "/faq" ? "/" : "#schedule"} className={cn("hover:underline text-black font-bold")}>
           Schedule
-        </a>
-        <a href="#contact" className={cn("text-black font-bold")}>
+        </Link>
+        <Link href={pathname === "/faq" ? "/" : "#contact"} className={cn("hover:underline text-black font-bold")}>
           Contact
-        </a>
+        </Link>
+        <Link href={pathname === "/faq" ? "/" : "/faq"} className={cn("hover:underline text-black font-bold")}>
+          FAQ
+        </Link>
       </nav>
     </>
   );
