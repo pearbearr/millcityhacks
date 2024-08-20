@@ -30,25 +30,25 @@ export function NavigationBar(props: any) {
           props.className + (open ? " bg-blue-400" : "")
         }
       >
-        <Link href={pathname === "/faq" || pathname === "/team" ? "/" : "#about"} className={cn("text-black font-bold hover:underline ")}>
+        <Link href="#about" className={cn("text-black font-bold hover:underline ")}>
           About
         </Link>
-        <Link href={pathname === "/faq" || pathname === "/team" ? "/" : "#tracks"} className={cn("text-black font-bold hover:underline ")}>
+        <Link href="#tracks" className={cn("text-black font-bold hover:underline ")}>
           Tracks
         </Link>
-        <Link href={pathname === "/faq" || pathname === "/team" ? "/" : "#schedule"} className={cn("text-black font-bold hover:underline ")}>
+        <Link href="#schedule" className={cn("text-black font-bold hover:underline ")}>
           Schedule
         </Link>
-        <Link href={pathname === "/faq" || pathname === "/team" ? "/" : "#contact"} className={cn("text-black font-bold hover:underline ")}>
+        <Link href="#contact" className={cn("text-black font-bold hover:underline ")}>
           Contact
         </Link>
-        <Link href={pathname === "/faq"  ? "/" : "/faq"} className={cn("text-black font-bold hover:underline ")}>
+        <Link href="#faq" className={cn("text-black font-bold hover:underline ")}>
           FAQ
         </Link>
-        <Link href={pathname === "/faq" || pathname === "/team" ? "/team" : "/team"} className={cn("text-black font-bold hover:underline ")}>
+        <Link href="#team" className={cn("text-black font-bold hover:underline ")}>
           Team
         </Link>
-        <Link href={pathname === "/faq" || pathname === "/team" ? "/" : "#sponsors"} className={cn("text-black font-bold hover:underline ")}>
+        <Link href="#sponsors" className={cn("text-black font-bold hover:underline ")}>
           Sponsors
         </Link>
       </nav> }
@@ -61,25 +61,25 @@ export function NavigationBar(props: any) {
           props.className
         }
       >
-        <Link href={pathname === "/faq" || pathname === "/team" ? "/" : "#about"} className={cn("hover:underline text-black font-bold")}>
+        <Link href="#about" className={cn("hover:underline text-black font-bold")}>
           About
         </Link>
-        <Link href={pathname === "/faq" || pathname === "/team" ? "/" : "#tracks"} className={cn("hover:underline text-black font-bold")}>
+        <Link href="#tracks" className={cn("hover:underline text-black font-bold")}>
           Tracks
         </Link>
-        <Link href={pathname === "/faq" || pathname === "/team" ? "/" : "#schedule"} className={cn("hover:underline text-black font-bold")}>
+        <Link href="#schedule" className={cn("hover:underline text-black font-bold")}>
           Schedule
         </Link>
-        <Link href={pathname === "/faq" || pathname === "/team" ? "/" : "#contact"} className={cn("hover:underline text-black font-bold")}>
+        <Link href="#contact" className={cn("hover:underline text-black font-bold")}>
           Contact
         </Link>
-        <Link href={pathname === "/faq"  ? "/" : "/faq"} className={cn("hover:underline text-black font-bold")}>
+        <Link href="#faq" className={cn("hover:underline text-black font-bold")}>
           FAQ
         </Link>
-        <Link href={pathname === "/faq" || pathname === "/team" ? "/team" : "/team"} className={cn("hover:underline text-black font-bold")}>
+        <Link href="#team" className={cn("hover:underline text-black font-bold")}>
           Team
         </Link>
-        <Link href={pathname === "/faq" || pathname === "/team" ? "/" : "#sponsors"} className={cn("hover:underline text-black font-bold")}>
+        <Link href="#sponsors" className={cn("hover:underline text-black font-bold")}>
           Sponsors
         </Link>
       </nav>
