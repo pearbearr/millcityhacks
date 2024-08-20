@@ -6,6 +6,8 @@ import Image from "next/image";
 import { Separator } from "@/components/ui/separator";
 import { Tracks } from "@/components/Tracks";
 import SponsorsCarousel from "@/components/SponsorsCarousel";
+import FAQ from "@/components/ui/FAQ";
+import Team from "@/components/Team";
 
 export default function Home() {
   return (
@@ -43,6 +45,13 @@ export default function Home() {
       <Tracks />
       <Separator className="my-10 mx-10 w-[91%] h-1 bg-lmain"></Separator>
       <Schedule />
+      <Separator className="my-10 mx-10 w-[91%] h-1 bg-lmain"></Separator>
+      <section id="team" className="border-2 border-blue-800 text-slate-800 mx-10 p-5 shadow-xl rounded-xl">
+        <Team/>
+      </section>
+      
+      <Separator className="my-10 mx-10 w-[91%] h-1 bg-lmain"></Separator>
+      <FAQ/>
 
       <Footer />
     </main>
