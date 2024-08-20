@@ -45,6 +45,9 @@ export function NavigationBar(props: any) {
         <Link href={pathname === "/faq" ? "/" : "/faq"} className={cn("text-black font-bold hover:underline ")}>
           FAQ
         </Link>
+        <Link href={pathname === "/faq" ? "/" : "#sponsors"} className={cn("text-black font-bold hover:underline ")}>
+          Sponsors
+        </Link>
       </nav> }
         </button>
       </div>
@@ -69,6 +72,9 @@ export function NavigationBar(props: any) {
         </Link>
         <Link href={pathname === "/faq" ? "/" : "/faq"} className={cn("hover:underline text-black font-bold")}>
           FAQ
+        </Link>
+        <Link href={pathname === "/faq" ? "/" : "#sponsors"} className={cn("hover:underline text-black font-bold")}>
+          Sponsors
         </Link>
       </nav>
     </>
