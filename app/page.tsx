@@ -5,6 +5,7 @@ import { Schedule } from "@/components/Schedule";
 import Image from "next/image";
 import { Separator } from "@/components/ui/separator";
 import { Tracks } from "@/components/Tracks";
+import SponsorsCarousel from "@/components/SponsorsCarousel";
 
 export default function Home() {
   return (
@@ -32,6 +33,11 @@ export default function Home() {
       </header>
       <section id="about">
         <HeroTaglineWriter />
+      </section>
+      <Separator className="my-10 mx-10 w-[91%] h-1 bg-lmain"></Separator>
+      <section id="sponsors" className="border-2 border-blue-800 text-slate-800 mx-10 p-5 shadow-xl rounded-xl">
+        <h2 className="text-3xl font-bold mb-6 text-center bg-lmain rounded-3xl">Sponsors</h2>
+        <div className="flex items-center justify-center"><SponsorsCarousel/></div>
       </section>
       <Separator className="my-10 mx-10 w-[91%] h-1 bg-lmain"></Separator>
       <Tracks />
