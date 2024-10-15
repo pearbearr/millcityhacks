@@ -12,7 +12,7 @@ import Team from "@/components/Team";
 export default function Home() {
   return (
     <main>
-      <Countdown targetDate="11/09/2024 08:00" />
+      <Countdown targetDate="11/16/2024 08:00" />
       <p className="p-5 bg-lfooterandtimer border-2 border-black border-b-0 text-white text-[2em] font-bold text-center">
         November, 1st, 2024
       </p>
