@@ -14,7 +14,7 @@ export default function Home() {
     <main>
       <Countdown targetDate="11/16/2024 08:00" />
       <p className="p-5 bg-lfooterandtimer border-2 border-black border-b-0 text-white text-[2em] font-bold text-center">
-        November, 1st, 2024
+        November 16th, 2024
       </p>
       <header className="grid grid-cols-2 items-center justify-center gap-x-32 ">
         <Image

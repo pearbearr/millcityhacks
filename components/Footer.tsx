@@ -15,8 +15,8 @@ export function Footer() {
             <h3 className="text-2xl font-bold mb-4">Contact</h3>
             <ul className="list-none text-gray-300">
               <li className="mb-2">
-                <a href="mailto:lowellhigh.tpi@gmail.com" className="hover:underline">
-                  lowellhigh.tpi@gmail.com
+                <a href="mailto:millcityhacks@gmail.com" className="hover:underline">
+                  millcityhacks@gmail.com
                 </a>
               </li>
               <li>
@@ -33,8 +33,8 @@ export function Footer() {
             <h3 className="text-2xl font-bold mb-4">Social</h3>
             <ul className="list-none text-gray-300">
               <li className="mb-2">
-                <a
-                  href="https://www.facebook.com/millcityhacks"
+                {/* <a */}
+                  {/* href="https://www.facebook.com/millcityhacks"
                   className="hover:underline"
                 >
                   Facebook
@@ -48,7 +48,7 @@ export function Footer() {
                   Twitter
                 </a>
               </li>
-              <li>
+              <li> */}
                 <a
                   href="https://www.instagram.com/millcityhacks"
                   className="hover:underline"
