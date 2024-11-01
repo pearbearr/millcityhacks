@@ -9,6 +9,11 @@ export function Schedule() {
       description: "Kick off the event with exciting announcements and introductions.",
     },
     {
+      time: "8:30 AM",
+      event: "Hacking begins!",
+      description: "Time to put your coding skills to the test and build amazing projects!",
+    },
+    {
       time: "8:30 AM - 9:00 AM",
       event: "Team Formation",
       description: "Form your teams and get ready to hack!",
@@ -23,11 +28,11 @@ export function Schedule() {
       event: "Workshop #2: Intro to Web Development",
       description: "Learn basic web development with this introductory workshop.",
     },
-    {
-      time: "12:00 PM - 7:00 PM",
-      event: "Hacking Begins!",
-      description: "Time to put your coding skills to the test and build amazing projects.",
-    },
+    // {
+    //   time: "12:00 PM - 7:00 PM",
+    //   event: "Hacking Begins!",
+    //   description: "Time to put your coding skills to the test and build amazing projects.",
+    // },
     {
       time: "6:00 - 7:30 PM",
       event: "Project Deadline",
