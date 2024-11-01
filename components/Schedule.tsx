@@ -34,12 +34,12 @@ export function Schedule() {
     //   description: "Time to put your coding skills to the test and build amazing projects.",
     // },
     {
-      time: "6:00 - 7:30 PM",
+      time: "7:30 PM",
       event: "Project Deadline",
       description: "Submit your projects for a chance to win amazing prizes.",
     },
     {
-      time: "6:00 - 8:00 PM",
+      time: "7:30 PM - 8:00 PM",
       event: "Judging",
       description: "Our judges will evaluate your projects.",
     },
