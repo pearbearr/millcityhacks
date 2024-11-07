@@ -2,7 +2,7 @@
 import React from 'react';
 
 const sponsors = [
-  '/images/xyz-logo-white.png',
+  '/images/pngs/xyz-logo-white.png',
   '/images/sponsor2.png',
     '/images/sponsor3.png',
   '/images/sponsor1.png',
