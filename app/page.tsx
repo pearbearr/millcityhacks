@@ -12,9 +12,9 @@ import Team from "@/components/Team";
 export default function Home() {
   return (
     <main>
-      <Countdown targetDate="11/23/2024 08:00" />
+      <Countdown targetDate="12/21/2024 03:00" />
       <p className="p-5 bg-lfooterandtimer border-2 border-black border-b-0 text-white text-[2em] font-bold text-center">
-        November 23rd, 2024
+        Due December 21st, 2024
       </p>
       <header className="grid grid-cols-2 items-center justify-center gap-x-32 ">
         <Image
@@ -44,7 +44,7 @@ export default function Home() {
       <Separator className="my-10 mx-10 w-[91%] h-1 bg-lmain"></Separator>
       <Tracks />
       <Separator className="my-10 mx-10 w-[91%] h-1 bg-lmain"></Separator>
-      <Schedule />
+      {/* <Schedule /> */}
       <Separator className="my-10 mx-10 w-[91%] h-1 bg-lmain"></Separator>
       <section id="team" className="border-2 border-blue-800 text-slate-800 mx-10 p-5 shadow-xl rounded-xl">
         <Team/>
