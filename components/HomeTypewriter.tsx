@@ -166,6 +166,9 @@ export function HeroTaglineWriter() {
         <LinkPreview url="https://docs.google.com/forms/d/e/1FAIpQLSfof7bVLGS0_VfHOpx8iuDRd0_qM29cdmiyYW8LAH8HQdeFvw/viewform" className="text-center flex items-center justify-center w-40 h-10 rounded-xl bg-blue-100 text-black border border-black  text-sm">
           Register
         </LinkPreview>
+        <LinkPreview url="https://millcityhacks.devpost.com/" className="text-center flex items-center justify-center w-40 h-10 rounded-xl bg-blue-100 text-black border border-black  text-sm">
+          DevPost
+        </LinkPreview>
       </div>
     </div>
   );
